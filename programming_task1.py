@@ -1,3 +1,12 @@
+"""
+This program finds the most frequent integer in a list.
+
+The idea is similar to counting votes: 
+    1. Each number gets one count every time we see it.
+    2. A dictionary stores each number and how many times it has appeared.
+    3. While counting, we keep track of the number with the highest count so far.
+    4. If another number only ties the highest count, we keep the earlier answer.
+"""
 
 def get_most_frequent_occurrence(numbers: list[int]) -> int | None:
     """
